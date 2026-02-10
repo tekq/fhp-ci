@@ -4,7 +4,11 @@ description: Fedora optimized for Zen 4/5
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest
 
-modules:    
+modules:
+  - type: dnf
+    repos:
+      files:
+        - 'https://raw.githubusercontent.com/tekq/fhp-build/refs/heads/main/fhp.repo'
   - type: dnf
     repos:
       copr:
