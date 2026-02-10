@@ -59,5 +59,21 @@ modules:
     system:
       enabled:
         - libvirtd.service
+        type: dnf
+
+  - type: dnf
+    install: # safetynet
+      packages:
+        - lz4
+        - openssl
+        - zstd
+        - xz
+    replace:
+      from-repo: fhp
+        packages:
+          - lz4
+          - openssl
+          - zstd
+          - xz
     
   - type: signing
