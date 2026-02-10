@@ -8,7 +8,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - 'https://github.com/tekq/fhp-build/tree/main'
+        - 'https://raw.githubusercontent.com/tekq/fhp-build/refs/heads/main/fhp.repo'
   - type: dnf
     repos:
       copr:
