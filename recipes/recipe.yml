@@ -59,7 +59,7 @@ modules:
     system:
       enabled:
         - libvirtd.service
-        type: dnf
+        
 
   - type: dnf
     install: # safetynet
