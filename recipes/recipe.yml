@@ -68,12 +68,12 @@ modules:
         - openssl
         - zstd
         - xz
-    replace:
-      from-repo: fhp
-        packages:
-          - lz4
-          - openssl
-          - zstd
-          - xz
+      replace:
+        from-repo: fhp
+          packages:
+            - lz4
+            - openssl
+            - zstd
+            - xz
     
   - type: signing
